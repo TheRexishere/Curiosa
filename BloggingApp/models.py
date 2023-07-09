@@ -22,6 +22,7 @@ class Blog(models.Model):
     blog_url = models.CharField(max_length=100)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     blog_image = models.ImageField(upload_to="blog_img/")
+    date_of_creation = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return str(self.blog_id)
