@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="743e5cfe-629b-4276-93bb-67e186757527" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BloggingApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/BloggingApp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BloggingApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/BloggingApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BloggingApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/BloggingApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Curiosa/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Curiosa/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Curiosa/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Curiosa/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +30,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Curiosa/Curiosa"
+    "last_opened_file_path": "D:/Curiosa/Curiosa",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

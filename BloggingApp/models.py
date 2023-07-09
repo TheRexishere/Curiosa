@@ -4,6 +4,10 @@ from django.db import models
 
 # Categories
 class Category(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     category_id = models.AutoField(primary_key=True)
     cat_title = models.CharField(max_length=100)
     description = models.TextField()
@@ -16,6 +20,10 @@ class Category(models.Model):
 
 # Blog
 class Blog(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Blogs'
+
     blog_id = models.AutoField(primary_key=True)
     blog_title = models.CharField(max_length=100)
     blog_content = models.TextField()
@@ -27,5 +35,4 @@ class Blog(models.Model):
     def __str__(self):
         return str(self.blog_id)
     
-
-
+    
