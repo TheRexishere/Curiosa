@@ -1,0 +1,5 @@
+[client]
+database = curiosa
+user = admin@localhost
+password = 74123
+default-character-set = utf8
