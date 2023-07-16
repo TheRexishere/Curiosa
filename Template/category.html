@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block blog %} {% endblock %}
+
+{% block head%}{{ category.cat_title }}{% endblock %}
+
+<!--Blog Content -->
+{% block Content %}
+              {% for article in articles %}
+
+              <article class="entry">
+                <div class="entry-img">
+                <img src="/media/{{ article.blog_image }}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                {{ article.blog_title }}
+              </h2>
+
+              <div class="entry-content">
+                {{ article.blog_content | truncatewords:60 | safe}}
+
+                <br>
+                <div class="read-more">
+                  <a href="/blog/{{ article.blog_url }}">Read More</a>
+                </div>
+              </div>
+
+              </article>
+
+              {% endfor %}
+
+{% endblock %}
+
+{% block category %}
+
+{% endblock %}
+
+<!--Configure Pagination-->
+{% block pagination %}
+<div class="blog-pagination">
+    <ul class="justify-content-center">
+        {% if page_numbers.third %}
+       <li><a href="/category/{{category.cat_URL}}/{{page_numbers.first}}">{{page_numbers.first}}</a></li>
+       <li class="active" href="/category/{{category.cat_URL}}/{{page_numbers.second}}"><a href="">{{page_numbers.second}}</a></li>
+       <li><a href="/category/{{category.cat_URL}}/{{page_numbers.third}}">{{page_numbers.third}}</a></li>
+       {% elif last %}
+        <li><a href="/category/{{category.cat_URL}}/{{page_numbers.first}}">{{page_numbers.first}}</a></li>
+       <li class="active"><a href="/category/{{category.cat_URL}}/{{page_numbers.second}}">{{page_numbers.second}}</a></li>
+        {% elif first %}
+       <li class="active"><a href="/category/{{category.cat_URL}}/{{page_numbers.first}}">{{page_numbers.first}}</a></li>
+        {% else %}
+       <li  class="active"><a href="/category/{{category.cat_URL}}/{{page_numbers.first}}">{{page_numbers.first}}</a></li>
+       <li><a href="/category/{{category.cat_URL}}/{{page_numbers.second}}">{{page_numbers.second}}</a></li>
+        {% endif %}
+    </ul>
+</div>
+<br>
+{% endblock %}
+
+

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block blog %}    {% endblock %}
+
+{% block head%}{{ article.category }}{% endblock %}
+
+{% block Content %}
+              <article class="entry">
+                <div class="entry-img">
+                <img src="/media/{{ article.blog_image }}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                {{ article.blog_title }}
+              </h2>
+
+              <div class="entry-content">
+
+                {{ article.blog_content | safe}}
+
+              </div>
+
+              </article><!-- End blog entry -->
+{% endblock %}
+
+
+
+
+
