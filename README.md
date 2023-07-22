@@ -12,8 +12,7 @@ Blogs with the highest views belongs to the Popular blogs group in Sidebar. Simi
 3) Present Content of Blog With Image:
 Blogs are stored with images to express the ideas and concepts of the blog in a better way. Each blog can have images to express the writer's point of view. These images are stored in the MEDIA folder and are maintained using ImageField() in Models.
 ![Screenshot 2023-07-22 221143](https://github.com/shivamtherexpandey/Curiosa/assets/95215534/36cc28fa-8bfb-4eff-a550-22e8e0c58094)
-
-![Screenshot 2023-07-22 221456](https://github.com/shivamtherexpandey/Curiosa/assets/95215534/02479b9e-bd43-486d-b945-370201da5347)
+![Screenshot 2023-07-22 221456](https://github.com/shivamtherexpandey/Curiosa/assets/95215534/db8b6b51-911d-465b-8236-f4e8b7a96c26)
 
 4) Edit Content With Django SummerNote Editor:
 Web Application makes use of SummerNote Editor to shape the content of the blog to make it more presentable. Adding bold text, hyperlink, Adding Table, Image and Video on the content of the blog.
