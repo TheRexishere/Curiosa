@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="#">Curiosa</a></h1>
+      <h1 class="logo"><a href="/">Curiosa</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -103,18 +103,29 @@
               <div class="sidebar-item categories">
                 <ul>
                   {% block popular_category %}
-                  <li><a href="#category">General <span>(25)</span></a></li>
+                    {% for category in popular_categories %}
+
+                    <li><a href="/category/{{ category.cat_URL }}">{{ category.cat_title }}<span>({{category.cat_view_count}})</span></a></li>
+
+                    {% endfor %}
                   {% endblock %}
                 </ul>
               </div><!-- End sidebar categories-->
 
               <h3 class="sidebar-title">Popular Posts</h3>
               <div class="sidebar-item popular-posts">
+
+                {% block popular_blog %}
+
+                {% for blog in popular_post %}
                 <div class="post-item clearfix">
-                  <img src="{% static 'assets/img/blog/blog-recent-1.jpg' %}" alt="">
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <img src="/media/{{ blog.blog_image }}" alt="{{ blog.blog_title }}">
+                  <h4><a href="/blog/{{ blog.blog_url }}">{{ blog.blog_title }}</a></h4>
+                  <time datetime="2020-01-01">{{ blog.date_of_creation }}</time>
                 </div>
+
+                {% endfor %}
+                {% endblock %}
               </div><!-- End blog sidebar -->
 
               <br>
@@ -139,7 +150,7 @@
           </div><!-- End blog sidebar -->
 
       </div>
-     <div>
+     </div>
     </section><!-- End Blog Section -->
 
   </main><!-- End #main -->

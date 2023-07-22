@@ -8,10 +8,10 @@ def get_processed_data():
     categories = Category.objects.all()
 
     # Accessing 5 Popular categories
-    popular_categories = {}
+    popular_categories = Category.objects.all().order_by('-cat_view_count', '-date_of_creation')[:5:]
 
     # Accessing 5 Popular Posts
-    popular_post = {}
+    popular_post = Blog.objects.all().order_by('-blog_view_count', '-date_of_creation')[:5:]
 
     # Accessing 5 Recent Blogs
     recent_blogs = Blog.objects.all().order_by('-blog_id')[:5:]
@@ -27,7 +27,7 @@ def home(request):
 
     categories, popular_categories, popular_post, recent_blogs = get_processed_data()
 
-    print(blogs)
+    #print(blogs)
 
     page_nums = {'first': 1, 'second': 2}
 
@@ -49,10 +49,18 @@ def show_blog(request, blog_url):
 
     # Accessing the Blog
     blog = Blog.objects.get(blog_url=blog_url)
+    blog.blog_view_count += 1
+    blog.category.cat_view_count += 1
+
+    # Save Changes to Blog
+    blog.save()
+
+    # Save Changes to Category
+    blog.category.save()
 
     categories, popular_categories, popular_post, recent_blogs = get_processed_data()
 
-    print(blog)
+    # print(blog.category.cat_view_count)
 
     blog_data = {
         'article': blog,
@@ -64,6 +72,7 @@ def show_blog(request, blog_url):
 
     return render(request, 'blog.html', blog_data)
 
+
 def show_category(request, cat_URL):
     ''' Load all the Categories in the
     database to show blog category wise'''
@@ -72,6 +81,10 @@ def show_category(request, cat_URL):
 
     # Selecting Requested Category
     category = Category.objects.get(cat_URL=cat_URL)
+    category.cat_view_count += 1
+
+    # Save changes to Category
+    category.save()
 
     blog = Blog.objects.filter(category=category)
 
@@ -100,13 +113,13 @@ def show_category(request, cat_URL):
 
 def load_cat_page(request, cat_URL, page_num):
     category = Category.objects.get(cat_URL=cat_URL)
-    print(category)
+    #print(category)
     all_blogs = Blog.objects.filter(category=Category.objects.get(cat_URL=cat_URL))
 
     if page_num != 0 and len(all_blogs) > 5 * (page_num-1):
         blog = all_blogs[5*(page_num-1):5*(page_num-1)+5:]
 
-        print(blog)
+        #print(blog)
 
         categories, popular_categories, popular_post, recent_blogs = get_processed_data()
 
@@ -143,7 +156,7 @@ def load_page(request, page_num):
     if page_num != 0 and len(all_blogs) > 5 * (page_num-1):
         blog = all_blogs[5*(page_num-1):5*(page_num-1)+5:]
 
-        print(blog)
+        #print(blog)
 
         categories, popular_categories, popular_post, recent_blogs = get_processed_data()
 
