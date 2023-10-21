@@ -5,31 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="743e5cfe-629b-4276-93bb-67e186757527" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/versel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Curiosa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Curiosa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloggingApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/BloggingApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloggingApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/BloggingApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-inside-post.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-recent-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-recent-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-recent-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-recent-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/blog-recent-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/comments-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/comments-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/comments-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/comments-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/comments-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/blog/comments-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/cta-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/hero-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Curiosa/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Curiosa/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +29,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2SK7emVReRl7AmVUd718368zCrj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -69,6 +53,34 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Curiosa\Curiosa\Template" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="scratch_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Curiosa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch_1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
