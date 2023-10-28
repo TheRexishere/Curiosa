@@ -9,5 +9,6 @@ urlpatterns = [
     path('category/<slug:cat_URL>', views.show_category, name="Category"),
     path('<int:page_num>', views.load_page, name='Blog Page Access'),
     path('category/<slug:cat_URL>/<int:page_num>', views.load_cat_page, name='Category Page Access'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
