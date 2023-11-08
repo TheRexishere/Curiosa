@@ -99,18 +99,21 @@
 
             <div class="sidebar">
 
-              <h3 class="sidebar-title">Popular Categories</h3>
-              <div class="sidebar-item categories">
-                <ul>
-                  {% block popular_category %}
-                    {% for category in popular_categories %}
+              {% if recent_blogs %}
+              <h3 class="sidebar-title">Recent Posts</h3>
 
-                    <li><a href="/category/{{ category.cat_URL }}">{{ category.cat_title }}<span>({{category.cat_view_count}})</span></a></li>
+                {% for blogs in recent_blogs %}
+                <div class="sidebar-item popular-posts">
+                  <div class="post-item clearfix">
+                    <img src="/media/{{ blogs.blog_image }}" alt="{{ blogs.blog_id }}">
+                    <h4><a href="/blog/{{ blogs.blog_url }}">{{ blogs.blog_title }}</a></h4>
+                    <time>{{ blogs.date_of_creation }}</time>
+                  </div>
+                </div><!-- End sidebar recent posts-->
+                {% endfor %}
+              {% endif %}
 
-                    {% endfor %}
-                  {% endblock %}
-                </ul>
-              </div><!-- End sidebar categories-->
+              <br>
 
               <h3 class="sidebar-title">Popular Posts</h3>
               <div class="sidebar-item popular-posts">
@@ -128,22 +131,19 @@
                 {% endblock %}
               </div><!-- End blog sidebar -->
 
-              <br>
+              <h3 class="sidebar-title">Popular Categories</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  {% block popular_category %}
+                    {% for category in popular_categories %}
 
+                    <li><a href="/category/{{ category.cat_URL }}">{{ category.cat_title }}<span>({{category.cat_view_count}})</span></a></li>
 
-              {% if recent_blogs %}
-              <h3 class="sidebar-title">Recent Posts</h3>
+                    {% endfor %}
+                  {% endblock %}
+                </ul>
+              </div><!-- End sidebar categories-->
 
-                {% for blogs in recent_blogs %}
-                <div class="sidebar-item popular-posts">
-                  <div class="post-item clearfix">
-                    <img src="/media/{{ blogs.blog_image }}" alt="{{ blogs.blog_id }}">
-                    <h4><a href="/blog/{{ blogs.blog_url }}">{{ blogs.blog_title }}</a></h4>
-                    <time>{{ blogs.date_of_creation }}</time>
-                  </div>
-                </div><!-- End sidebar recent posts-->
-                {% endfor %}
-              {% endif %}
 
             </div><!-- End sidebar -->
 
